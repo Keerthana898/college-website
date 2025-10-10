@@ -1,0 +1,172 @@
+<!--
+Project: Example College (separate files)
+Files included in this editor: index.html, styles.css, script.js
+
+How to use:
+1. Create a folder and save three files: index.html, styles.css, script.js
+2. Open index.html in your browser (double-click) or run a local server.
+3. Edit text/data inside HTML (departments/events) or change colors in styles.css.
+
+This is a responsive, accessible frontend (no backend). It includes: Navbar with mobile menu, Hero, About, Departments grid, Events list, Admissions CTA, Contact form (frontend validation), Footer.
+-->
+
+<!-- index.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Example College</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="logo">C</div>
+        <div class="brand-text">
+          <strong>Example College</strong>
+          <small>Established 1998</small>
+        </div>
+      </div>
+      <nav class="main-nav" id="main-nav">
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#departments">Departments</a>
+        <a href="#events">Events</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>Learn. Innovate. Lead.</h1>
+          <p>Undergraduate &amp; postgraduate programs with hands-on learning and placement support.</p>
+          <div class="cta-row">
+            <a class="btn primary" href="#admissions">Apply Now</a>
+            <a class="btn" href="#about">Learn More</a>
+          </div>
+        </div>
+        <div class="hero-media">
+          <img src="" alt="Campus view" />
+        </div>
+      </div>
+    </section>
+
+    <section class="container about" id="about">
+      <div class="about-grid">
+        <div>
+          <h2>Newtons institute of engneering College</h2>
+          <p>Since 1998, Example College provides quality education, research opportunities, and real-world exposure. Our alumni work across top companies and startups worldwide.</p>
+          <ul>
+            <li>Accredited programs in engineering & business</li>
+            <li>Industry internships and placement support</li>
+            <li>State-of-the-art labs and research centres</li>
+          </ul>
+        </div>
+        <aside class="quick-facts">
+          <h3>Quick Facts</h3>
+          <dl>
+            <div><dt>Departments</dt><dd>12+</dd></div>
+            <div><dt>Students</dt><dd>5000+</dd></div>
+            <div><dt>Placements</dt><dd>95%</dd></div>
+            <div><dt>Years</dt><dd>27</dd></div>
+          </dl>
+        </aside>
+      </div>
+    </section>
+
+    <section class="bg-light" id="departments">
+      <div class="container">
+        <h2>Departments</h2>
+        <div class="cards">
+          <article class="card">
+            <h4>Computer Science</h4>
+            <p>B.Tech, M.Tech &amp; Research programs in CS with modern labs.</p>
+          </article>
+          <article class="card">
+            <h4>Electronics &amp; Communication</h4>
+            <p>Strong industry ties and practical lab work.</p>
+          </article>
+          <article class="card">
+            <h4>Business Administration</h4>
+            <p>BBA and MBA programs with placement support.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="container events" id="events">
+      <h2>Upcoming Events</h2>
+      <ul class="event-list">
+        <li>
+          <strong>TechFest 2025</strong>
+          <time datetime="2025-10-15">Oct 15, 2025</time>
+          <p>A two-day festival with hackathons and workshops.</p>
+        </li>
+        <li>
+          <strong>Convocation</strong>
+          <time datetime="2025-12-20">Dec 20, 2025</time>
+          <p>Graduation ceremony for class of 2025.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="cta-banner">
+      <div class="container cta-inner">
+        <h3>Ready to join?</h3>
+        <p>Apply for admissions or contact our admissions office for guidance.</p>
+        <div>
+          <a class="btn primary" href="#contact">Contact Us</a>
+          <a class="btn" href="#admissions">Admissions</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="container contact" id="contact">
+      <h2>Contact</h2>
+      <form id="contact-form" novalidate>
+        <div class="form-grid">
+          <label>
+            <span>Name</span>
+            <input type="text" id="name" required />
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" id="email" required />
+          </label>
+          <label class="full">
+            <span>Message</span>
+            <textarea id="message" rows="4" required></textarea>
+          </label>
+        </div>
+        <div class="form-actions">
+          <button class="btn primary" type="submit">Send Message</button>
+          <button class="btn" type="reset">Reset</button>
+        </div>
+        <p class="form-status" id="form-status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Newtons College — All rights reserved.</p>
+      <nav class="footer-nav">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

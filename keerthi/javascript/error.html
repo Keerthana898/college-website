@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="bn">click me</button>
+    <h1 id="keeru">keerthi honey</h1>
+    <div id="para">
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque porro rem odio quisquam ipsa commodi vel! Quis beatae officiis reprehenderit earum dolor commodi eos, non temporibus quas culpa voluptatem aliquam.</p>
+</div>
+</body>
+<script>
+    let btn=document.getElementById('bn');
+    let kee=document.getElementById('keeru')
+    function btn_click(){
+        document.body.style.backgroundColor='yellow';
+        document.body.style.color='white';
+        // document.style.cursor='pointer';
+        // document.btn_click.style.backgroundColor='black';
+        // document.btn_click.style.color='white';
+        console.log('button submitted');
+
+    }
+    btn.addEventListener('click',btn_click);
+    let para = document.getElementById('para');
+    para.addEventListener('mouseover',()=>{
+        para.style.backgroundColor='orange';
+        para.style.color='red';
+        para.style.scale='1.0';
+        // para.style.animation='blink';
+
+    })
+     para.addEventListener('mouseout',()=>{
+        para.style.color='pink';
+        // para.style.animation='blink';
+      para.style.fontSize='2rem'
+        para.style.backgroundColor='aqua';
+        para.style.cursor='pointer';
+     })
+    //  let kee=document.getElementById('keeru');
+    //  function honey(){
+        // document.body.style.backgroundColor='green';
+     
+     keeru.addEventListener('mouseover',()=>{
+        // keeru.style.scale='1.9';
+        keeru.style.fontSize='2rem';
+        keeru.style.backgroundColor='green';
+        keeru.style.cursor='pointer';
+        // keeru.style.justifycontent='center';
+     })
+     
+     bn.addEventListener('mouseover',()=>{
+        bn.style.backgroundColor='black';
+        bn.style.color='white';
+        bn.style.fontSize='2rem';
+        bn.style.cursor='pointer';
+     })
+     bn.addEventListener('mouseout',()=>{
+        bn.style.color='yellow';
+        bn.style.backgroundColor='white';
+     })
+
+    
+</script>
+</html>
