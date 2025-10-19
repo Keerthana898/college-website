@@ -1,4 +1,4 @@
-let menu= document.querySelector('#menu-bars');
+let menu= document.querySelector('.icons');
 let navbar = document.querySelector('.navbar');
 
 
@@ -20,7 +20,7 @@ document.querySelector('#close') .onClick = ()=>{
     document.querySelector('#search-form') .classList.remove('active')
 }
 
- var swiper = new Swiper(".home-slider", {
+ var Swiper = new Swiper(".home-slider", {
         spaceBetween: 30,
         centeredSlides: true,
         autoplay: {
